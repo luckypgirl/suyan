@@ -12,26 +12,27 @@
 	border: 1rpx solid rgba(0, 0, 0, .2);
 }
 .title {
-	font-size: 44rpx;
-	line-height: 1.5;
+	font-size: 48rpx;
 	margin-bottom: 30rpx;
-}
-.main {
-	font-size: 36rpx;
-	line-height: 1.5;
-	margin-bottom: 50rpx;
-	font-weight: 300;
 }
 .author {
 	font-size: 26rpx;
-	line-height: 1.5;
-	color: #555;
-	font-weight: 300;
+	color: #666;
+	margin-bottom: 50rpx;
+}
+.main {
+	font-size: 36rpx;
+	margin-bottom: 50rpx;
 }
 .date {
 	color: #aaa;
-	margin-left: 10rpx;
 	font-size: 24rpx;
+}
+.del {
+	text-align: right;
+	float: right;
+	font-size: 24rpx;
+	color: #777;
 }
 .nomore {
 	text-align: center;

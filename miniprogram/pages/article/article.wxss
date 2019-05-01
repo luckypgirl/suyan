@@ -6,32 +6,30 @@
 	font-size: 48rpx;
 	color: #000;
 }
+.main_info .author {
+	color: #666;
+	font-size: 26rpx;
+	margin-bottom: 50rpx;
+}
 .main_info .content {
 	font-size: 36rpx;
 	color: #222;
-	margin-bottom: 50rpx;
-	font-weight: 300;
-	line-height: 1.5;
-}
-.main_info .author {
-	color: #555;
-	font-size: 30rpx;
-	font-weight: 300;
-	line-height: 1.5;
+	margin-bottom: 80rpx;
 }
 .main_info .date {
-	color: #999;
-	font-size: 30rpx;
-	font-weight: 300;
-	line-height: 1.5;
+	color: #aaa;
+	font-size: 24rpx;
 }
 .main_info .back {
-	width: 100rpx;
-	height: 100rpx;
+	width: 60rpx;
+	height: 60rpx;
+	font-size: 20rpx;
+	color: #aaa;
+	text-align: center;
 }
 .main_info .back image {
-	width: 100rpx;
-	height: 100rpx;
+	width: 60rpx;
+	height: 60rpx;
 }
 .meta {
 	margin-top: 80rpx;
@@ -41,10 +39,13 @@
 	align-items: center;
 }
 .poster {	
-	width: 100rpx;
-	height: 100rpx;
+	width: 60rpx;
+	height: 60rpx;
+	font-size: 20rpx;
+	color: #aaa;
+	text-align: center;
 }
 .poster image {	
-	width: 100rpx;
-	height: 100rpx;
+	width: 60rpx;
+	height: 60rpx;
 }

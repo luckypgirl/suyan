@@ -1,14 +1,17 @@
 <view class='box'>
-    <view class="card" wx:for="{{articles}}" wx:key="{{post}}" bindtap='showInfo' data-id="{{item._id}}">
-        <view class="title">
-            <text selectable="{{true}}">{{item.title}}</text>
+    <view class="card" wx:for="{{articles}}" wx:key="{{post}}">
+        <view class="title" bindtap='showInfo' data-id="{{item._id}}">
+            <text>{{item.title}}</text>
         </view>
-        <view class='main'>
-            <text selectable="{{true}}">{{item.content}}</text>
+        <view class='author'>文 / {{item.author}}</view>
+        <view class='main' bindtap='showInfo' data-id="{{item._id}}">
+            <text>{{item.content}}</text>
         </view>
-        <view class='author'>© {{item.author}}
-            <text class='date'>{{item.date}}</text>
+        <view class='date'>
+            <text>{{item.date}}</text>
+            <text class='del' bindtap='del' wx:if="{{openid == 'oMwMY45QQ2aoEhkl08yO9h0q0cN8'}}" data-id="{{item._id}}">删除</text>
         </view>
+
     </view>
     <view class="nomore" wx:if="{{nodata}}">没有更多了</view>
 </view>

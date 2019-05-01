@@ -76,7 +76,7 @@ Page({
 					},
 					{
 						type: 'text',
-						content: '© ' + that.data.mainInfo.author,
+						content: '文 / ' + that.data.mainInfo.author,
 						fontSize: 14,
 						color: '#555',
 						textAlign: 'left',
@@ -95,8 +95,8 @@ Page({
 						textAlign: 'left',
 						top: 220,
 						left: 50,
-						lineHeight: 60,
-						MaxLineNumber: 20,
+						lineHeight: 40,
+						MaxLineNumber: 10,
 						breakWord: true,
 						width: 300
 					},

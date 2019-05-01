@@ -5,7 +5,8 @@ Page({
     data: {
 		pages: 0,
         articles: [],
-		nodata: true,
+		nodata: false,
+		openid: ''
     },
 
     onLoad: function() {
@@ -15,6 +16,15 @@ Page({
             })
             return
         }
+
+		wx.cloud.callFunction({
+			name: 'login',
+			complete: res => {
+				this.setData({
+					openid: res.result.openid
+				})
+			}
+		})
     },
     onShow() {
         this.getlist()
@@ -46,22 +56,25 @@ Page({
     getlist: function() {
 		let pages = this.data.pages
 		console.log(pages)
-		wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  
-			title: '加载中',
-			icon: 'loading',
-		});
+		// wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  
+		// 	title: '加载中',
+		// 	icon: 'loading',
+		// });
+		wx.showNavigationBarLoading()
         const db = wx.cloud.database()
         // 查询当前用户所有的 counters
 		db.collection('articles').orderBy('timestamp', 'desc').skip(pages).limit(5).get({
             success: res => {
-				wx.hideLoading()
+				// wx.hideLoading()
+				wx.hideNavigationBarLoading()
 				wx.stopPullDownRefresh()
                 console.log(res.data)
 				if (res.data.length > 0){
 					if (pages > 0) {
 
 						this.setData({
-							articles: this.data.articles.concat(res.data)
+							articles: this.data.articles.concat(res.data),
+							nodata: false
 						})
 					} else {
 						this.setData({
@@ -84,6 +97,22 @@ Page({
             }
         })
 	}, 
+	del(e) {
+		var id = e.currentTarget.dataset.id
+		var that = this
+		if (id) {
+			const db = wx.cloud.database()
+			db.collection('articles').doc(id).remove({
+				success: console.log,
+				fail: console.error
+			})
+			wx.showToast({
+				icon: 'none',
+				title: '删除成功'
+			})
+			that.getlist()
+		}	
+	},
 	onShareAppMessage: function () {
 		
 	},

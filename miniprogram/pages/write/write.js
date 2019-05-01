@@ -27,7 +27,7 @@ Page({
 		}
 
 		const db = wx.cloud.database()
-		// 这段代码是为了应付微信的审核 审核期间发布功能隐藏
+		// 查询当前用户所有的 counters
 		db.collection('articles').where({ _id: 'ee3099285cc6aa2c08be970f7ba10142' }).field({sta:true}).get({
 			success: res => {
 				console.log(res.data[0].sta)
@@ -109,6 +109,9 @@ Page({
 		var h = date.getHours();
 		//分
 		var m = date.getMinutes();
+		if(m < 10){
+			m = '0' + m
+		}
 		var datestr = Y + '/' + M + '/' + D + ' ' + h + ":" + m
 		this.setData({
 			datestr: datestr

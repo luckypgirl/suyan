@@ -1,20 +1,24 @@
 /* @font-face {
-    font-family: 'din';
-    src: url('https://suyan-aa5112.tcb.qcloud.la/jinling.ttf?sign=bb0c30b99a58cebabd22dff3a40d52c7&t=1556678086');
+    font-family: 'xiaowei';
+    src: url('https://suyan-aa5112.tcb.qcloud.la/xiaowei.otf?sign=dea8089a82b858c35e134444524aca61&t=1556693946');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wenyi';
+    src: url('https://suyan-aa5112.tcb.qcloud.la/wenyi.ttf?sign=9dccd4929cbe3ac77fe88c9940efb070&t=1556694042');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kuhei';
+    src: url('https://suyan-aa5112.tcb.qcloud.la/kuhei.ttf?sign=f42fd9254606a5035bf3c2e81ac6782c&t=1556694189');
     font-weight: 300;
     font-style: normal;
 } */
 
 page {
-    font-family: 
-	"Helvetica Neue",
-	Helvetica,
-	"PingFang SC",
-	"Hiragino Sans GB",
-	"Microsoft YaHei",
-	"微软雅黑",
-	Arial,
-	sans-serif;
+    
 }
 
 .container {
