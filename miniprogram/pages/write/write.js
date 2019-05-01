@@ -27,7 +27,7 @@ Page({
 		}
 
 		const db = wx.cloud.database()
-		// 查询当前用户所有的 counters
+		// 这段代码是为了应付微信的审核 审核期间发布功能隐藏
 		db.collection('articles').where({ _id: 'ee3099285cc6aa2c08be970f7ba10142' }).field({sta:true}).get({
 			success: res => {
 				console.log(res.data[0].sta)
