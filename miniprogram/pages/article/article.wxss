@@ -1,0 +1,50 @@
+.main_info {
+	padding: 50rpx;
+}
+.main_info .title {
+	margin-bottom: 30rpx;
+	font-size: 48rpx;
+	color: #000;
+}
+.main_info .content {
+	font-size: 36rpx;
+	color: #222;
+	margin-bottom: 50rpx;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.main_info .author {
+	color: #555;
+	font-size: 30rpx;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.main_info .date {
+	color: #999;
+	font-size: 30rpx;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.main_info .back {
+	width: 100rpx;
+	height: 100rpx;
+}
+.main_info .back image {
+	width: 100rpx;
+	height: 100rpx;
+}
+.meta {
+	margin-top: 80rpx;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.poster {	
+	width: 100rpx;
+	height: 100rpx;
+}
+.poster image {	
+	width: 100rpx;
+	height: 100rpx;
+}

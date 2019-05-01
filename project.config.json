@@ -1,0 +1,72 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx0cce836f603bdf38",
+	"projectname": "apple",
+	"libVersion": "2.6.6",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": 0,
+					"name": "beta",
+					"pathName": "pages/beta/beta",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "启动页",
+					"pathName": "pages/start/start",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "启动页",
+					"pathName": "pages/explore/explore",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "photo",
+					"pathName": "pages/photo/photo",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "写作",
+					"pathName": "pages/write/write",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文章",
+					"pathName": "pages/article/article",
+					"query": "id=988c1b1b5cc7b8d4093034084506a8ac"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,28 @@
+<view wx:if="{{loginSta}}">
+    <block wx:if="{{hide}}">
+        <view class='motto'>
+            <text>Writing for your life.</text>
+            <text>当前小程序版本仅限展示，暂不支持发布！</text>
+        </view>
+    </block>
+    <block wx:else>
+        <view class='form'>
+            <view class='form_label'>标题</view>
+            <view class='form_ipt'>
+                <textarea bindinput="setTitle" value="{{title}}" auto-height/>
+            </view>
+            <view class='form_label'>正文</view>
+            <view class='form_ipt'>
+                <textarea class='maintext' value="{{content}}" bindinput="setContent" auto-height maxlength="1000" />
+            </view>
+            <view class='sub_btn' bindtap='submit'>写好了</view>
+        </view>
+    </block>
+
+</view>
+<view class='login_box' wx:else>
+    <view class='motto_top'>Writing for your life.</view>
+    <view class='login_btn'>
+        <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo">微信登录</button>
+    </view>
+</view>

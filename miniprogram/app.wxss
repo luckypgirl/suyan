@@ -1,0 +1,59 @@
+/* @font-face {
+    font-family: 'din';
+    src: url('https://suyan-aa5112.tcb.qcloud.la/jinling.ttf?sign=bb0c30b99a58cebabd22dff3a40d52c7&t=1556678086');
+    font-weight: 300;
+    font-style: normal;
+} */
+
+page {
+    font-family: 
+	"Helvetica Neue",
+	Helvetica,
+	"PingFang SC",
+	"Hiragino Sans GB",
+	"Microsoft YaHei",
+	"微软雅黑",
+	Arial,
+	sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.mo {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.ma {
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.zan {
+    width: 300rpx;
+    height: 80rpx;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 36rpx;
+    text-align: center;
+    line-height: 80rpx;
+    margin-top: 80rpx;
+    margin-bottom: 80rpx;
+}

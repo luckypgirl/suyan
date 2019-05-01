@@ -1,0 +1,34 @@
+{
+    "cloud": true,
+    "pages": [
+        "pages/index/index",
+		"pages/write/write",
+		"pages/article/article"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "素颜诗",
+        "navigationBarTextStyle": "black"
+    },
+     "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#2c2c2c",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "img/11.png",
+                "selectedIconPath": "img/12.png"
+            },
+            {
+                "pagePath": "pages/write/write",
+                "text": "创作",
+                "iconPath": "img/21.png",
+                "selectedIconPath": "img/22.png"
+            }
+        ]
+    }
+}

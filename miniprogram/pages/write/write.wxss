@@ -1,0 +1,57 @@
+.form {
+	padding: 25rpx;
+}
+.form_label {
+	font-size: 36rpx;
+	line-height: 1.5;
+	margin-bottom: 10rpx;
+}
+.form_ipt {
+	padding: 10rpx;
+	box-shadow: inset 0 0 10rpx 0 rgba(0,0,0,.1);
+	border: 1rpx solid #333;
+	margin-bottom: 30rpx;
+}
+.form_ipt textarea {
+	font-size: 40rpx;
+	line-height: 1.5;
+	font-family: "jinling"!important;
+}
+.maintext {
+	min-height: 600rpx;
+}
+.sub_btn {
+	text-align: center;
+	font-size: 50rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	background-color: #333;
+	color: #fff;
+	margin-top: 30rpx;
+}
+.login_box {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background: url('https://suyan-aa5112.tcb.qcloud.la/login_bg.jpg?sign=e616bf16de8e48f24c7fa29c326bdd61&t=1556590234') no-repeat center bottom;
+	background-size: 100% auto; 
+}
+.login_btn {
+	display: flex;
+}
+.motto {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.motto_top {
+	margin-bottom: 100rpx;
+}

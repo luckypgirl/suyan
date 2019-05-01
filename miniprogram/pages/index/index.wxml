@@ -1,0 +1,14 @@
+<view class='box'>
+    <view class="card" wx:for="{{articles}}" wx:key="{{post}}" bindtap='showInfo' data-id="{{item._id}}">
+        <view class="title">
+            <text selectable="{{true}}">{{item.title}}</text>
+        </view>
+        <view class='main'>
+            <text selectable="{{true}}">{{item.content}}</text>
+        </view>
+        <view class='author'>© {{item.author}}
+            <text class='date'>{{item.date}}</text>
+        </view>
+    </view>
+    <view class="nomore" wx:if="{{nodata}}">没有更多了</view>
+</view>

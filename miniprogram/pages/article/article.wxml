@@ -1,0 +1,21 @@
+<view class="main_info">
+    <view class="title">
+        <text>{{mainInfo.title}}</text>
+    </view>
+    <view class="content">
+        <text>{{mainInfo.content}}</text>
+    </view>
+    <view class="author">© {{mainInfo.author}}</view>
+    <view class="date">{{mainInfo.date}}</view>
+	<view class='meta'>
+		<view class="back" bindtap="goList">
+			<image src="/img/back.png" />
+		</view>
+		<view class="poster" bindtap="create">
+			<image src="/img/poster.png" />
+		</view>
+	</view>
+    
+</view>
+
+<canvasdrawer painting="{{painting}}" bind:getImage="eventGetImage"/>
