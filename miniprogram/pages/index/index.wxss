@@ -1,15 +1,19 @@
 
+page {
+	background: url('https://suyan-aa5112.tcb.qcloud.la/bg.jpg?sign=1e5862169f3848ecad4b928548884d79&t=1557038293');
+}
 .box {
 	padding: 25rpx;
-	background-color: #F6F6F6;
 }
 .card {
-	padding: 50rpx;
-	background-color: #fff;
+	padding: 20rpx;
 	margin-bottom: 25rpx;
 	box-shadow: 0 0 25rpx rgba(0, 0, 0, .06);
-	border-radius: 10rpx;
-	border: 1rpx solid rgba(0, 0, 0, .2);
+	background: url('https://suyan-aa5112.tcb.qcloud.la/note-bg.jpg?sign=337918766696e8c34f5ce93c5cf1bd80&t=1557038190');
+}
+.card_box {
+	border: 1rpx dashed #c9c9c7;
+	padding: 30rpx;
 }
 .title {
 	font-size: 48rpx;
@@ -19,24 +23,34 @@
 	font-size: 26rpx;
 	color: #666;
 	margin-bottom: 50rpx;
+	font-weight: 300;
 }
 .main {
 	font-size: 36rpx;
 	margin-bottom: 50rpx;
+	font-weight: 300;
 }
 .date {
 	color: #aaa;
 	font-size: 24rpx;
+	font-weight: 300;
 }
 .del {
 	text-align: right;
 	float: right;
 	font-size: 24rpx;
 	color: #777;
+	font-weight: 300;
 }
 .nomore {
 	text-align: center;
 	font-size: 24rpx;
 	color: #999;
 	padding: 50rpx 0;
+	font-weight: 300;
+}
+.main text {
+	font-size: 36rpx;
+	line-height: 1.5;
+	font-weight: 300;
 }

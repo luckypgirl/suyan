@@ -1,5 +1,6 @@
 .form {
 	padding: 25rpx;
+	font-weight: 300;
 }
 .form_label {
 	font-size: 36rpx;

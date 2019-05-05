@@ -1,25 +1,28 @@
-<view class="main_info">
-    <view class="title">
-        <text selectable="{{true}}">{{mainInfo.title}}</text>
+<view class='main_outer'>
+    <view class='main_box'>
+        <view class="main_info">
+            <view class="title">
+                <text selectable="{{true}}">{{mainInfo.title}}</text>
+            </view>
+            <view class="author">
+                <text selectable="{{true}}">文 / {{mainInfo.author}}</text>
+            </view>
+            <view class="content">
+                <text selectable="{{true}}">{{mainInfo.content}}</text>
+            </view>
+            <view class="date">{{mainInfo.date}}</view>
+
+        </view>
     </view>
-    <view class="author">
-        <text selectable="{{true}}">文 / {{mainInfo.author}}</text>
-    </view>
-    <view class="content">
-        <text selectable="{{true}}">{{mainInfo.content}}</text>
-    </view>
-    <view class="date">{{mainInfo.date}}</view>
     <view class='meta'>
         <view class="back" bindtap="goList">
             <image src="/img/back.png" />
-			<text>返回</text>
+            <text>返回</text>
         </view>
         <view class="poster" bindtap="create">
             <image src="/img/save.png" />
-			<text>保存</text>
+            <text>保存</text>
         </view>
     </view>
-
 </view>
-
 <canvasdrawer painting="{{painting}}" bind:getImage="eventGetImage" />

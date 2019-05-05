@@ -17,8 +17,15 @@
     font-style: normal;
 } */
 
+
+@font-face {
+    font-family: 'jingling';
+    src: url('https://suyan-aa5112.tcb.qcloud.la/jinling.ttf?sign=a5fdc05b2604e1930caa6746614bf5de&t=1557037777');
+    font-weight: 300;
+    font-style: normal;
+}
 page {
-    
+    font-family: 'jingling';
 }
 
 .container {

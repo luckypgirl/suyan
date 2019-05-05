@@ -10,7 +10,7 @@ Page({
 		title: '',
 		content: '',
 		datestr: '',
-		hide: false
+		hide: true
 	},
 
 	/**
@@ -32,9 +32,9 @@ Page({
 			success: res => {
 				console.log(res.data[0].sta)
 				var sta = res.data[0].sta
-				if (sta == 1) {
+				if (sta != 1) {
 					that.setData({
-						hide: true
+						hide: false
 					})
 				}
 			},
@@ -145,7 +145,8 @@ Page({
 				face: that.data.userInfo.avatarUrl,
 				content: that.data.content,
 				date: that.data.datestr,
-				timestamp: Date.now()
+				timestamp: Date.now(),
+				is_del: false
 			},
 			success(res) {
 				// res 是一个对象，其中有 _id 字段标记刚创建的记录的 id

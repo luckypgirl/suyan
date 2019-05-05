@@ -1,5 +1,16 @@
+page {
+	background: url('https://suyan-aa5112.tcb.qcloud.la/bg.jpg?sign=1e5862169f3848ecad4b928548884d79&t=1557038293');
+}
+.main_outer {
+	padding: 20rpx;
+}
+.main_box {
+	padding: 20rpx;
+	background: url('https://suyan-aa5112.tcb.qcloud.la/note-bg.jpg?sign=337918766696e8c34f5ce93c5cf1bd80&t=1557038190');
+}
 .main_info {
-	padding: 50rpx;
+	padding: 30rpx;
+	border: 1rpx dashed #c9c9c7;
 }
 .main_info .title {
 	margin-bottom: 30rpx;
@@ -10,33 +21,38 @@
 	color: #666;
 	font-size: 26rpx;
 	margin-bottom: 50rpx;
+	font-weight: 300;
 }
 .main_info .content {
 	font-size: 36rpx;
 	color: #222;
 	margin-bottom: 80rpx;
+	font-weight: 300;
 }
 .main_info .date {
 	color: #aaa;
 	font-size: 24rpx;
+	font-weight: 300;
 }
-.main_info .back {
+.back {
 	width: 60rpx;
 	height: 60rpx;
 	font-size: 20rpx;
 	color: #aaa;
 	text-align: center;
+	font-weight: 300;
 }
-.main_info .back image {
+.back image {
 	width: 60rpx;
 	height: 60rpx;
 }
 .meta {
-	margin-top: 80rpx;
+	margin-top: 50rpx;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
+	padding-bottom: 50rpx;
 }
 .poster {	
 	width: 60rpx;
@@ -44,6 +60,7 @@
 	font-size: 20rpx;
 	color: #aaa;
 	text-align: center;
+	font-weight: 300;
 }
 .poster image {	
 	width: 60rpx;

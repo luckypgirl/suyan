@@ -101,8 +101,13 @@ Page({
 		var id = e.currentTarget.dataset.id
 		var that = this
 		if (id) {
+			console.log(id)
 			const db = wx.cloud.database()
-			db.collection('articles').doc(id).remove({
+			db.collection('articles').doc(id).update({
+				data: {
+					// 表示将 done 字段置为 true
+					timestamp: 0
+				},
 				success: console.log,
 				fail: console.error
 			})
