@@ -15,7 +15,7 @@
     src: url('https://suyan-aa5112.tcb.qcloud.la/kuhei.ttf?sign=f42fd9254606a5035bf3c2e81ac6782c&t=1556694189');
     font-weight: 300;
     font-style: normal;
-} */
+}
 
 
 @font-face {
@@ -23,9 +23,9 @@
     src: url('https://suyan-aa5112.tcb.qcloud.la/jinling.ttf?sign=a5fdc05b2604e1930caa6746614bf5de&t=1557037777');
     font-weight: 300;
     font-style: normal;
-}
+} */
 page {
-    font-family: 'jingling';
+    /* font-family: 'jingling'; */
 }
 
 .container {
