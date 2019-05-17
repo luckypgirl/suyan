@@ -6,7 +6,7 @@ page {
 	padding: 25rpx;
 }
 .card {
-	padding: 20rpx;
+	padding: 15rpx;
 	margin-bottom: 25rpx;
 	box-shadow: 0 0 25rpx rgba(0, 0, 0, .06);
 	background: url('https://suyan-aa5112.tcb.qcloud.la/note-bg.jpg?sign=337918766696e8c34f5ce93c5cf1bd80&t=1557038190');

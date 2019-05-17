@@ -1,31 +1,6 @@
-/* @font-face {
-    font-family: 'xiaowei';
-    src: url('https://suyan-aa5112.tcb.qcloud.la/xiaowei.otf?sign=dea8089a82b858c35e134444524aca61&t=1556693946');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'wenyi';
-    src: url('https://suyan-aa5112.tcb.qcloud.la/wenyi.ttf?sign=9dccd4929cbe3ac77fe88c9940efb070&t=1556694042');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kuhei';
-    src: url('https://suyan-aa5112.tcb.qcloud.la/kuhei.ttf?sign=f42fd9254606a5035bf3c2e81ac6782c&t=1556694189');
-    font-weight: 300;
-    font-style: normal;
-}
 
-
-@font-face {
-    font-family: 'jingling';
-    src: url('https://suyan-aa5112.tcb.qcloud.la/jinling.ttf?sign=a5fdc05b2604e1930caa6746614bf5de&t=1557037777');
-    font-weight: 300;
-    font-style: normal;
-} */
 page {
-    /* font-family: 'jingling'; */
+    font-family: 'jinkai';
 }
 
 .container {

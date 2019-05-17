@@ -16,7 +16,11 @@ Page({
             })
             return
         }
-
+		wx.loadFontFace({
+			family: 'jinkai',
+			source: 'url("https://suyan-aa5112.tcb.qcloud.la/jinkai.ttf?sign=afe0f342b73bd9bb515487596279cc81&t=1558059374")',
+			success: console.log
+		})
 		wx.cloud.callFunction({
 			name: 'login',
 			complete: res => {
@@ -25,10 +29,10 @@ Page({
 				})
 			}
 		})
+		this.getlist()
     },
-    onShow() {
-        this.getlist()
-    },
+    // onShow() {
+    // },
 	showInfo(e) {
 		console.log(e)
 		var id = e.currentTarget.dataset.id
@@ -56,16 +60,11 @@ Page({
     getlist: function() {
 		let pages = this.data.pages
 		console.log(pages)
-		// wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  
-		// 	title: '加载中',
-		// 	icon: 'loading',
-		// });
 		wx.showNavigationBarLoading()
         const db = wx.cloud.database()
         // 查询当前用户所有的 counters
 		db.collection('articles').orderBy('timestamp', 'desc').skip(pages).limit(5).get({
             success: res => {
-				// wx.hideLoading()
 				wx.hideNavigationBarLoading()
 				wx.stopPullDownRefresh()
                 console.log(res.data)
@@ -103,11 +102,7 @@ Page({
 		if (id) {
 			console.log(id)
 			const db = wx.cloud.database()
-			db.collection('articles').doc(id).update({
-				data: {
-					// 表示将 done 字段置为 true
-					timestamp: 0
-				},
+			db.collection('articles').doc(id).remove({
 				success: console.log,
 				fail: console.error
 			})

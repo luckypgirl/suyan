@@ -26,6 +26,12 @@ Page({
 			})
 		}
 
+		wx.loadFontFace({
+			family: 'jinkai',
+			source: 'url("https://suyan-aa5112.tcb.qcloud.la/jinkai.ttf?sign=afe0f342b73bd9bb515487596279cc81&t=1558059374")',
+			success: console.log
+		})
+		
 		const db = wx.cloud.database()
 		// 查询当前用户所有的 counters
 		db.collection('articles').where({ _id: 'ee3099285cc6aa2c08be970f7ba10142' }).field({sta:true}).get({

@@ -15,6 +15,14 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
+
+
+		wx.loadFontFace({
+			family: 'jinkai',
+			source: 'url("https://suyan-aa5112.tcb.qcloud.la/jinkai.ttf?sign=afe0f342b73bd9bb515487596279cc81&t=1558059374")',
+			success: console.log
+		})
+		
 		console.log(options)
 		var id = options.id
 		var that = this

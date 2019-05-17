@@ -52,6 +52,9 @@
 	align-items: center;
 	align-content: center;
 	justify-content: center;
+	line-height: 2;
+	background: url('https://suyan-aa5112.tcb.qcloud.la/login_bg.jpg?sign=e616bf16de8e48f24c7fa29c326bdd61&t=1556590234') no-repeat center bottom;
+	background-size: 100% auto;
 }
 .motto_top {
 	margin-bottom: 100rpx;

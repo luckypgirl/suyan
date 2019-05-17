@@ -10,7 +10,7 @@
             </view>
             <view class='date'>
                 <text>{{item.date}}</text>
-                <!-- <text class='del' bindtap='del' wx:if="{{openid == 'oMwMY45QQ2aoEhkl08yO9h0q0cN8' || item._openid == openid}}" data-id="{{item._id}}">删除</text> -->
+                <text class='del' bindtap='del' wx:if="{{item._openid == openid}}" data-id="{{item._id}}">删除</text>
             </view>
         </view>
 

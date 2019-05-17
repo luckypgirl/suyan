@@ -19,6 +19,11 @@
             <image src="/img/back.png" />
             <text>返回</text>
         </view>
+        <view class="back">
+			<button open-type='share'></button>
+            <image src="/img/share.png" />
+            <text>分享</text>
+        </view>
         <view class="poster" bindtap="create">
             <image src="/img/save.png" />
             <text>保存</text>
